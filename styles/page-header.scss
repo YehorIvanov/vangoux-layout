@@ -1,17 +1,41 @@
-
 .page-header {
-    padding: 0 80px;
+  padding: 0 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
-    &__navigation {
-        display: none;
+  @include for-large-up {
+    padding: 0 160px;
+  }
+
+  &__navigation {
+    display: none;
+
+    @include for-large-up {
+        display: block;
     }
+  }
 
-    &__upload-btn {
-        display: none;
+  &__upload-btn {
+    display: none;
+
+    @include for-large-up {
+      display: block;
+      background: #1968fc;
+      box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
+      width: 180px;
+      height: 50px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+      border: none;
     }
-
+  }
 }
-
 
 .logo {
   width: 180px;
@@ -33,6 +57,6 @@
     // align-items: center;
     text-align: center;
     color: #1968fc;
-    margin-left: 10px ;
+    margin-left: 10px;
   }
 }
