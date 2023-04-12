@@ -1,0 +1,28 @@
+ 
+ @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+ @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Mulish:wght@400;600;700&family=Work+Sans:wght@400;700&display=swap);
+ @import 'page-header.scss';
+
+ * {
+    box-sizing: border-box;
+ }
+body {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    flood-color: #11223F;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.page {
+    background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
+    min-height: 100vh;
+    min-width: 640px;
+    padding: 40px 0 90px 0;
+    margin: 0 auto;
+
+
+
+}
+
+
