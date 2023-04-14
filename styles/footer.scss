@@ -1,0 +1,80 @@
+.footer {
+  height: 130px;
+  padding: 40px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-color: #fbfbfb;
+
+  @include for-large-up {
+    padding: 40px 160px;
+  }
+
+  &__signature {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    color: #1968fc;
+    background-color: #1968fc0d;
+  }
+  &__navigation {
+    display: none;
+
+    @include for-large-up {
+      display: block;
+      margin-left: 70px;
+    }
+  }
+
+  &__social {
+    margin-left: 50px;
+  }
+
+  &__illustration {
+    position: absolute;
+    bottom: 0;
+
+    background-size: contain;
+
+    right: 40px;
+    width: 55px;
+    height: 60px;
+    background-size: 142%;
+    background-repeat: no-repeat;
+    background-position-x: -9px;
+    background-position-y: -5px;
+    filter: drop-shadow(2px 6px 12px rgba(255, 131, 51, 0.3));
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/VincentIllustration.png);
+
+    @include for-large-up {
+      right: 160px;
+      width: 90px;
+      height: 100px;
+      background-position-x: -16px;
+      background-position-y: -9px;
+      background-size: auto;
+    }
+  }
+}
+
+.social-media {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+
+    @include for-large-up {
+      margin-right: 0;
+    }
+  }
+}

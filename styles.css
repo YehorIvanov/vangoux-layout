@@ -17,6 +17,8 @@
 @media screen and (min-width: 1440px) {
   .page-header__navigation {
     display: block;
+    margin-right: 20px;
+    margin-left: auto;
   }
 }
 .page-header__upload-btn {
@@ -81,6 +83,85 @@
   width: 180px;
 }
 
+.footer {
+  height: 130px;
+  padding: 40px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-color: #fbfbfb;
+}
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 40px 160px;
+  }
+}
+.footer__signature {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  color: #1968fc;
+  background-color: rgba(25, 104, 252, 0.0509803922);
+}
+.footer__navigation {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .footer__navigation {
+    display: block;
+    margin-left: 70px;
+  }
+}
+.footer__social {
+  margin-left: 50px;
+}
+.footer__illustration {
+  position: absolute;
+  bottom: 0;
+  background-size: contain;
+  right: 40px;
+  width: 55px;
+  height: 60px;
+  background-size: 142%;
+  background-repeat: no-repeat;
+  background-position-x: -9px;
+  background-position-y: -5px;
+  filter: drop-shadow(2px 6px 12px rgba(255, 131, 51, 0.3));
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/VincentIllustration.png);
+}
+@media screen and (min-width: 1440px) {
+  .footer__illustration {
+    right: 160px;
+    width: 90px;
+    height: 100px;
+    background-position-x: -16px;
+    background-position-y: -9px;
+    background-size: auto;
+  }
+}
+
+.social-media {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.social-media__item {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3px;
+}
+@media screen and (min-width: 1440px) {
+  .social-media__item {
+    margin-right: 0;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -99,10 +180,14 @@ body {
   min-width: 640px;
   padding: 40px 0 90px 0;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 @media screen and (min-width: 1440px) {
   .page {
     width: 1440px;
+    padding: 30px 0 0 0;
     background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
   }
 }

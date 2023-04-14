@@ -13,6 +13,8 @@
 
     @include for-large-up {
         display: block;
+        margin-right: 20px;
+        margin-left: auto;
     }
   }
 
@@ -53,8 +55,6 @@
     font-size: 20px;
     line-height: 30px;
     width: 100px;
-    // display: flex;
-    // align-items: center;
     text-align: center;
     color: #1968fc;
     margin-left: 10px;
