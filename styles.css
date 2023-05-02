@@ -1,14 +1,35 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Mulish:wght@400;600;700&family=Work+Sans:wght@400;700&display=swap);
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+  color: #000;
+  list-style-type: none;
+}
+.nav-list__item {
+  padding: 0;
+  width: 120px;
+  height: 50px;
+}
+.nav-list__item_m {
+  width: 180px;
+}
+
 .page-header {
-  margin: 0 80px;
+  margin: 0 80px 0 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 @media screen and (min-width: 1440px) {
   .page-header {
-    margin: 0 160px;
+    margin: 0 160px 0 160px;
   }
 }
 .page-header__navigation {
@@ -62,27 +83,23 @@
   margin-left: 10px;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  margin: 0;
+.headline__title {
+  width: 480px;
+  height: 120px;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  margin: 80px 80px 0 80px;
   padding: 0;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 50px;
-  text-align: center;
-  color: #000;
-  list-style-type: none;
 }
-.nav-list__item {
+.headline__description {
+  width: 480px;
+  height: 80px;
+  font-size: 20px;
+  line-height: 40px;
+  margin: 20px 80px 0 80px;
   padding: 0;
-  width: 120px;
-  height: 50px;
 }
-.nav-list__item_m {
-  width: 180px;
-}
-
 .page-footer {
   height: 130px;
   padding: 40px;
@@ -169,7 +186,7 @@
 body {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
-  flood-color: #11223F;
+  flood-color: #11223f;
   font-size: 16px;
   line-height: 30px;
 }
